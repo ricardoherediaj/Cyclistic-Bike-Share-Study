@@ -263,6 +263,12 @@ all_trips_v2 %>%
   geom_col(position = "dodge")
 ```
 
+![](images/graphic%201.png)
+
+
+In the bar chart, we can see the weekend with the most used days for casual members to ride, being Saturday with the highest number of rides with over 450.000 and Sunday in second place with a little more than 400.000 rides. Unlike annual members, who had a higher development on the weekdays, specially on Tuesday, Wednesday and Thursday with numbers close to 400.000 rides and showing less rides on the weekend compared to casual members who traveled less in the weekdays. This might indicate that casual members tends to prefer riding on weekend showing an important difference compared to weekdays. Though annual members show more preference for middle weekdays (surpassing casual members), their performance through the other days did not lowered dramatically.
+
+
 ### Visualization for average duration:
 
 ```
