@@ -263,7 +263,7 @@ all_trips_v2 %>%
   geom_col(position = "dodge")
 ```
 
-<img src="images/graphic%201.jpg" width="100" >
+<img src="images/graphic%201.jpg" width="600" >
 
 
 In the bar chart, we can see the weekend with the most used days for casual members to ride, being Saturday with the highest number of rides with over 450.000 and Sunday in second place with a little more than 400.000 rides. Unlike annual members, who had a higher development on the weekdays, specially on Tuesday, Wednesday and Thursday with numbers close to 400.000 rides and showing less rides on the weekend compared to casual members who traveled less in the weekdays. This might indicate that casual members tends to prefer riding on weekend showing an important difference compared to weekdays. Though annual members show more preference for middle weekdays (surpassing casual members), their performance through the other days did not lowered dramatically.
@@ -282,6 +282,8 @@ all_trips_v2 %>%
   geom_col(position = "dodge")
 ```
 
+<img src="images/graphic%203.png" width="600" >
+
 ### Visualize the number of rides per month by rider type:
 
 ```
@@ -295,12 +297,8 @@ all_trips_v2 %>%
   geom_col(position = "dodge")
 ```
 
-### EXPORT SUMMARY FILE:
+<img src="images/graphic%202.png" width="600" >
 
-```
-counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
-write.csv(counts, file = '~/Desktop/cyclistic_project/avg_ride_length.csv')
-```
 
 ### 6. Act:
 
